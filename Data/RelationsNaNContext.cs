@@ -10,7 +10,7 @@ namespace RelationsNaN.Data
 {
     public class RelationsNaNContext : DbContext
     {
-        public RelationsNaNContext (DbContextOptions<RelationsNaNContext> options)
+        public RelationsNaNContext(DbContextOptions<RelationsNaNContext> options)
             : base(options)
         {
 
@@ -23,5 +23,7 @@ namespace RelationsNaN.Data
 
         public DbSet<Game> Game { get; set; } = default!;
         public DbSet<Genre> Genre { get; set; } = default!;
+
+        public DbSet<Platform> Platforms { get; set; } = default!;
     }
 }
